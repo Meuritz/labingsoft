@@ -2,8 +2,8 @@
 
 {% block body %}
     {% if subject is not null %}
-        Ciao {{ subject }}!
+        {{ 'Greetings' | trans }} {{ subject }}!
     {% else %}
-        Questo è u sito websss!!
+        {{ 'about.description' | trans }}
     {% endif %}
 {% endblock %}
