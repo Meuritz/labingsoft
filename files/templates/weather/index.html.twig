@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+{%block body %}
+    {% if state and city != null %}
+    <p>Ecco le previsioni del meteo per {{ city }}({{ state }})</p>
+    {% else %}
+        <h1>Error</h1>
+        <p>State and/or city not defined</p>
+    {% endif %}
+{% endblock %}
