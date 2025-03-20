@@ -1,2 +1,6 @@
 about.description: Questa è la nostra web app
 Greetings: 'messages'
+navigation:
+  home: 'Home'
+  about: 'About'
+  forecast: 'Meteo'
