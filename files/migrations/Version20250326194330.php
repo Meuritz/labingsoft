@@ -24,6 +24,11 @@ final class Version20250326194330 extends AbstractMigration
         $this->addSql('COMMENT ON COLUMN forecasts.day IS \'(DC2Type:datetimetz_immutable)\'');
     }
 
+    public function postUp(Schema $schema): void
+    {
+
+    }
+
     public function down(Schema $schema): void
     {
         $this->addSql('DROP SEQUENCE forecasts_id_seq CASCADE');
